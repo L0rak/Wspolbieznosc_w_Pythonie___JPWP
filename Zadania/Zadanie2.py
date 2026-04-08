@@ -15,7 +15,7 @@ if __name__ == '__main__':
     start_czas_reczny = time.time()
     watki = []
 
-# pętla tworzy 10000 fizycznych wątków (jeśli dla komputerów B9 to za trudne, zmniejsz liczba_zadan do 5000 albo 1000)
+# pętla tworzy 40 fizycznych wątków (jeśli dla komputerów B9 to za trudne, zmniejsz liczba_zadan do 5000 albo 1000)
     for i in range(liczba_zadan):
         t = threading.Thread(target=krotkie_zadanie)
         watki.append(t)
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     # 
     # 1. Stwórz blok 'with ProcessPoolExecutor(max_workers=4) as executor:' 
     # 2. Wewnątrz bloku użyj pętli oraz metody executor.submit(), 
-    #    aby przekazać funkcję 'krotkie_zadanie' do wykonania 40 razy.
+    #    aby przekazać funkcję 'krotkie_zadanie' do wykonania liczba_zadan razy.
     # ---------------------------------------------------------
 
     start_czas_pula = time.time()
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     # UZUPEŁNIJ KOD TUTAJ:
 
     # with ...
-    #     for i in range(liczba_zadan):
+    #     for i in range(...):
     #         ...
 
 
