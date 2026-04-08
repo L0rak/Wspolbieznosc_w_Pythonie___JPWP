@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
 
     koniec_io = time.time()
-    print(f"Czas zadań I/O: {koniec_io - start_io:.2f} s (Sekwencyjnie trwałoby to ok. 4.00 s)")
+    print(f"Czas zadań I/O: {koniec_io - start_io:.2f} s")
 
 
 
@@ -55,5 +55,4 @@ if __name__ == "__main__":
 
 
     koniec_cpu = time.time()
-    # Zakładając że 1 zadanie zajmuje ~0.3s, sekwencyjnie potrwa to ~1.2s
     print(f"Czas zadań CPU: {koniec_cpu - start_cpu:.2f} s")
