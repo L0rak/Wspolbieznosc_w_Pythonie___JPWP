@@ -15,7 +15,7 @@ if __name__ == '__main__':
     start_czas_reczny = time.time()
     watki = []
 
-# pętla tworzy 40 fizycznych wątków (jeśli dla komputerów B9 to za trudne, zmniejsz liczba_zadan do 5000 albo 1000)
+# pętla tworzy 40 fizycznych wątków (jeśli dla komputerów B9 to za trudne, zmniejsz liczba_zadan do 20 albo 10)
     for i in range(liczba_zadan):
         t = threading.Thread(target=krotkie_zadanie)
         watki.append(t)
