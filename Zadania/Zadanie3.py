@@ -20,7 +20,8 @@ def przelew(konto_z, konto_do, kwota):
     
     # with ... :
         print(f"[{threading.current_thread().name}] Zablokowano: {konto_pierwsze.nazwa}.")
-        time.sleep(0.1) # Symulacja opóźnienia
+        # symulacja opóźnienia
+        time.sleep(0.1)
         
         print(f"[{threading.current_thread().name}] Próba blokady 2: {konto_drugie.nazwa}")
         # with ... :
