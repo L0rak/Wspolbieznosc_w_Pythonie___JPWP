@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
 
 
-    start_cpu = time.time()
+    start_obliczeniowe = time.time()
     
     robotnicy_obliczeniowe = []
     for i in range(liczba_zadan):
@@ -54,5 +54,5 @@ if __name__ == "__main__":
     # Pamiętaj o pętli czekającej na zakończenie robotników (metoda join)
 
 
-    koniec_cpu = time.time()
-    print(f"Czas zadań CPU: {koniec_cpu - start_cpu:.2f} s")
+    koniec_obliczeniowe = time.time()
+    print(f"Czas zadań CPU: {koniec_obliczeniowe - start_obliczeniowe:.2f} s")
