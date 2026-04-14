@@ -39,5 +39,5 @@ if __name__ == "__main__":
     # UZUPEŁNIJ KOD TUTAJ:
     
     
-    
+    time.sleep(1)
     print(f"Zawartość listy po wykonaniu procesów: {wspolna_lista}")
