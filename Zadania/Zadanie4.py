@@ -55,4 +55,4 @@ if __name__ == "__main__":
 
 
     koniec_obliczeniowe = time.time()
-    print(f"Czas zadań CPU: {koniec_obliczeniowe - start_obliczeniowe:.2f} s")
+    print(f"Czas zadań obliczeniowych: {koniec_obliczeniowe - start_obliczeniowe:.2f} s")
